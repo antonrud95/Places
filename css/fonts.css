@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-Black.eot");
+  src: url("../fonts/SpoofTrial-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-Black.woff") format("woff"), url("../fonts/SpoofTrial-Black.ttf") format("truetype"), url("../fonts/SpoofTrial-Black.svg#SpoofTrial-Black") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-BlackSlanted.eot");
+  src: url("../fonts/SpoofTrial-BlackSlanted.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-BlackSlanted.woff") format("woff"), url("../fonts/SpoofTrial-BlackSlanted.svg#SpoofTrial-BlackSlanted") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-Bold.eot");
+  src: url("../fonts/SpoofTrial-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-Bold.woff") format("woff"), url("../fonts/SpoofTrial-Bold.svg#SpoofTrial-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-BoldSlanted.eot");
+  src: url("../fonts/SpoofTrial-BoldSlanted.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-BoldSlanted.woff") format("woff"), url("../fonts/SpoofTrial-BoldSlanted.svg#SpoofTrial-BoldSlanted") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-Light.eot");
+  src: url("../fonts/SpoofTrial-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-Light.woff") format("woff"), url("../fonts/SpoofTrial-Light.svg#SpoofTrial-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-LightSlanted.eot");
+  src: url("../fonts/SpoofTrial-LightSlanted.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-LightSlanted.woff") format("woff"), url("../fonts/SpoofTrial-LightSlanted.svg#SpoofTrial-LightSlanted") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-Medium.eot");
+  src: url("../fonts/SpoofTrial-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-Medium.woff") format("woff"), url("../fonts/SpoofTrial-Medium.svg#SpoofTrial-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-MediumSlanted.eot");
+  src: url("../fonts/SpoofTrial-MediumSlanted.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-MediumSlanted.woff") format("woff"), url("../fonts/SpoofTrial-MediumSlanted.svg#SpoofTrial-MediumSlanted") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-Regular.eot");
+  src: url("../fonts/SpoofTrial-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-Regular.woff") format("woff"), url("../fonts/SpoofTrial-Regular.svg#SpoofTrial-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../fonts/SpoofTrial-RegularSlanted.eot");
+  src: url("../fonts/SpoofTrial-RegularSlanted.eot?#iefix") format("embedded-opentype"), url("../fonts/SpoofTrial-RegularSlanted.woff") format("woff"), url("../fonts/SpoofTrial-RegularSlanted.svg#SpoofTrial-RegularSlanted") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../SpoofTrial-Thin.eot");
+  src: url("../SpoofTrial-Thin.eot?#iefix") format("embedded-opentype"), url("../SpoofTrial-Thin.woff") format("woff"), url("../SpoofTrial-Thin.svg#SpoofTrial-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Spoof Trial';
+  src: url("../SpoofTrial-ThinSlanted.eot");
+  src: url("../SpoofTrial-ThinSlanted.eot?#iefix") format("embedded-opentype"), url("../SpoofTrial-ThinSlanted.woff") format("woff"), url("../SpoofTrial-ThinSlanted.svg#SpoofTrial-ThinSlanted") format("svg");
+  font-weight: 100;
+  font-style: italic; }
