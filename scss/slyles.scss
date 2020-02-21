@@ -200,6 +200,12 @@ p {
                 }
             }
             button {
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-black;
                 padding: 14px 61px 14px 60px;
                 border: none;
                 background-color: $color-orange;
@@ -254,6 +260,7 @@ p {
         left: 26px;
         bottom: 40px;
         top: auto;
+        opacity: 1;
     }
     &-control-next {
         width: 28px;
@@ -261,11 +268,46 @@ p {
         left: 70px;
         bottom: 40px;
         top: auto;
+        opacity: 1;
     }
     &-control-prev-icon,
     &-control-next-icon {
         width: 28px;
         height: 9px;
+    }
+    &-indicators {
+        li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: none;
+        }
+    }
+}
+.upper-gradient {
+    height: 263px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.4;
+}
+.lower-gradient {
+    height: 263px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(-180deg);
+    opacity: 0.4;
+}
+@media (max-width: 1400px) {
+    .carousel {
+        .map {
+            display: none;
+        }
     }
 }
 @media (max-width: 1000px) {
@@ -320,15 +362,9 @@ p {
             }
         }
     }
-    .carousel {
-        &-control-prev,
-        &-control-next {
-            z-index: -1;
-        }
-    }
 }
 @media (max-width: 1100px) {
-    .section-intro {
+    .intro {
         .side {
             position: static;
             .upper {
@@ -389,6 +425,18 @@ p {
                 }
             }
         }
+        .carousel {
+            &-control-prev,
+            &-control-next {
+                display: none;
+            }
+        }
+        .carousel-indicators li {
+            display: block;
+        }
+    }
+    .lower-gradient {
+        display: none;
     }
 }
 @media (min-width: 1400px) {
@@ -405,5 +453,26 @@ p {
             } 
         }
     }
-} 
+    .carousel {
+        .map {
+            color: $color-white;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translate(-90%, 0);
+            z-index: 20;
+            i {
+                padding-right: 10px;
+            }
+            a {
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: $color-white;
+            } 
+        } 
+    }
+}
 // === /Header =====================================================================
