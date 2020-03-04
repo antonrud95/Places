@@ -201,7 +201,6 @@ p {
         .lower {
             background-color: $color-black;
             width: 664px;
-            
             padding: 64px 0 63px 86px;
             h3 {
                 color: $color-white;
@@ -222,6 +221,8 @@ p {
                         font-size: 14px;
                         line-height: 17px;
                         color: #F4F8FA;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
                         appearance: none;
                         outline: none;
                         border: 0!important;
@@ -894,6 +895,60 @@ p {
             }
         }
     }
+    .news-lower {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+        .lower-item {
+            max-width: 358px;
+            border-radius: 2px;
+            img {
+                display: block;
+            }
+            &__wrapper {
+                background-color: #f9f9fa;
+                height: 245px;
+                padding: 33px 24px 0 24px;
+                h4 {
+                    color: $color-black;
+                    margin-bottom: 16px;
+                }
+                &__tasks {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 26px;
+                    &__calendar {
+                        display: flex;
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                    &__description {
+                        span {
+                            padding: 5px 14px;
+                            border-radius: 2px;
+                            background-color: $color-orange;
+                            font-family: 'Helvetica';
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news-link {
+        text-align: center;
+        margin: 48px 0 152px 0;
+        .link-button {
+            padding: 13px 84px 15px 83px;
+            background-color: $color-black;
+            color: $color-white;
+        } 
+    }
 }
 @media (min-width: 1100px) {
     .news {
@@ -927,6 +982,20 @@ p {
         }
     }
 }
+@media (max-width: 1150px) {
+    .news {
+        .news-lower {
+            display: block;
+            .lower-item {
+                margin: 0 auto;
+                margin-bottom: 24px;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1099px) {
     .news {
         .news-upper {
@@ -945,7 +1014,7 @@ p {
                         margin-bottom: 19px;
                     }
                     a {
-                        
+                        margin-bottom: 40px;
                     }
                 }
             }
@@ -960,6 +1029,9 @@ p {
                 font-size: 28px;
                 line-height: 28px;
             }
+            p {
+                font-size: 14px;
+            }
             .news-upper-container {
                 text-align: center;
                 padding-top: 0;
@@ -970,11 +1042,18 @@ p {
                     p {
                         padding-left: 12px;
                     }
-                    .button-normal {
-                        display: block;
+                    a {
+                        width: 100%;
+                        margin-bottom: 20px;
                     }
                 }
             }
+        }
+        .news-link {
+            margin: 32px 0 120px 0;
+            .link-button {
+                width: 100%;
+            } 
         }
     }
 }
@@ -988,3 +1067,193 @@ p {
     }
 }
 // === /News =======================================================================
+
+// === Footer ======================================================================
+.footer {
+    padding: 72px 0 29px 0;
+    background-color: #f9f9fa;
+    .footer-main {
+        margin-bottom: 90px;
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            &__item {
+                display: flex;
+                flex-direction: column;
+                margin-right: 94px;
+                &:last-child {
+                   margin-right: 0;
+                }
+                h6 {
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                li {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        font-family: 'Helvetica Neue';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        .email-container {
+            h6 {
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+            form {
+                display: flex;
+                input {
+                    padding: 16px 0 15px 16px;
+                    width: 100%;
+                    background: #FBFBFC;
+                    border: 1px solid #343E5A;
+                    height: 48px;
+                    border-radius: 2px;
+                    margin-bottom: 33px;
+                }
+                ::-webkit-input-placeholder { 
+                    font-family: 'Helvetica Neue';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $color-black;
+                    opacity: 0.5;
+                    }
+                button {
+                    padding: 0 31px;
+                    height: 48px;
+                    background-color: $color-black;
+                    border-radius: 2px;
+                    border: none;
+                    color: $color-white;
+                    font-family: 'Helvetica Neue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .social-container {
+            margin-top: 40px;
+            h6 {
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+            a {
+                display: inline-block;
+                margin-right: 33px;
+            }
+        }
+    }
+    .copyrights-container {
+        &__copyrights {
+            margin-bottom: 16px;
+            p {
+                font-size: 14px;
+                line-height: 30px;
+                opacity: 0.5;
+            }
+        }
+        &__other {
+            a {
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 30px;
+                color: $color-black;
+            }
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .footer {
+        .footer-main {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .email-container {
+                position: absolute;
+                top: 0;
+                left: 560px;
+                order: 2;
+                form {
+                    input {
+                        width: 339px;
+                    }
+                    button {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .questions-container {
+                order: 1;
+            }
+            .social-container {
+                position: absolute;
+                top: 80px;
+                left: 560px;
+                order: 3;
+            }
+        }
+        .copyrights-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        padding: 42px 0 40px 0;
+        background-color: #f9f9fa;
+        .footer-main {
+            margin-bottom: 50px;
+            .questions-container {
+                &__item {
+                    width: 33.33333%;
+                    margin-right: 0;
+                    margin-bottom: 40px;
+                    &:last-child {
+                       margin-bottom: 0;
+                       margin-right: 0;
+                    }
+                }
+            }
+            .email-container {
+                h6 {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .footer {
+        .footer-main {
+            .questions-container {
+                &__item {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+// === /Footer =====================================================================
